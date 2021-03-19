@@ -3,23 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B7477B522604D4080023C894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7477B512604D4080023C894 /* AppDelegate.swift */; };
 		B7477B542604D4080023C894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7477B532604D4080023C894 /* SceneDelegate.swift */; };
-		B7477B562604D4080023C894 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7477B552604D4080023C894 /* ViewController.swift */; };
+		B7477B562604D4080023C894 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7477B552604D4080023C894 /* ModalViewController.swift */; };
 		B7477B592604D4080023C894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7477B572604D4080023C894 /* Main.storyboard */; };
 		B7477B5B2604D40A0023C894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7477B5A2604D40A0023C894 /* Assets.xcassets */; };
 		B7477B5E2604D40A0023C894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7477B5C2604D40A0023C894 /* LaunchScreen.storyboard */; };
+		B7477B682604D4380023C894 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = B7477B672604D4380023C894 /* FloatingPanel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7477B4E2604D4080023C894 /* FloatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7477B512604D4080023C894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7477B532604D4080023C894 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7477B552604D4080023C894 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7477B552604D4080023C894 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		B7477B582604D4080023C894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7477B5A2604D40A0023C894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7477B5D2604D40A0023C894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7477B682604D4380023C894 /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +60,7 @@
 			children = (
 				B7477B512604D4080023C894 /* AppDelegate.swift */,
 				B7477B532604D4080023C894 /* SceneDelegate.swift */,
-				B7477B552604D4080023C894 /* ViewController.swift */,
+				B7477B552604D4080023C894 /* ModalViewController.swift */,
 				B7477B572604D4080023C894 /* Main.storyboard */,
 				B7477B5A2604D40A0023C894 /* Assets.xcassets */,
 				B7477B5C2604D40A0023C894 /* LaunchScreen.storyboard */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = FloatExample;
+			packageProductDependencies = (
+				B7477B672604D4380023C894 /* FloatingPanel */,
+			);
 			productName = FloatExample;
 			productReference = B7477B4E2604D4080023C894 /* FloatExample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = B7477B452604D4070023C894;
+			packageReferences = (
+				B7477B662604D4380023C894 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+			);
 			productRefGroup = B7477B4F2604D4080023C894 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7477B562604D4080023C894 /* ViewController.swift in Sources */,
+				B7477B562604D4080023C894 /* ModalViewController.swift in Sources */,
 				B7477B522604D4080023C894 /* AppDelegate.swift in Sources */,
 				B7477B542604D4080023C894 /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7477B662604D4380023C894 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scenee/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7477B672604D4380023C894 /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7477B662604D4380023C894 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7477B462604D4070023C894 /* Project object */;
 }
